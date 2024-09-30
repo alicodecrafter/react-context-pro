@@ -13,7 +13,7 @@ import {
 
 type ContextType = {
   fontSize: number;
-  setFontSize: (number: () => number) => number;
+  setFontSize: Dispatch<SetStateAction<number>>;
 };
 
 const Context = createContext<ContextType | null>(null);
